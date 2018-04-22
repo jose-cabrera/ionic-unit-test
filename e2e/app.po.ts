@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import {browser, by, element} from 'protractor';
 
 export class Page {
 
@@ -12,5 +12,9 @@ export class Page {
 
   getPageOneTitleText() {
     return element(by.tagName('page-page1')).element(by.tagName('ion-title')).element(by.css('.toolbar-title')).getText();
+  }
+
+  getPageTwoTitleText() {
+    return element(by.tagName('page-page2')).element(by.tagName('ion-title')).element(by.css('.toolbar-title')).getText();
   }
 }

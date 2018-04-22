@@ -1,4 +1,4 @@
-import { Page } from './app.po';
+import {Page} from './app.po';
 
 describe('App', () => {
   let page: Page;
@@ -17,5 +17,17 @@ describe('App', () => {
         expect(title).toEqual('Page One');
       });
     });
-  })
+  });
+
+  describe('second screen', () => {
+    beforeEach(() => {
+      page.navigateTo('/#/page2');
+    });
+
+    it('should have a title saying Page Two', () => {
+      page.getPageTwoTitleText().then(title => {
+        expect(title).toEqual('Page Two');
+      });
+    });
+  });
 });
