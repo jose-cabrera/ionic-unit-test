@@ -3,8 +3,6 @@ import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { Page1 } from './page1';
 import { IonicModule, Platform, NavController} from 'ionic-angular/index';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 
 describe('Page1', () => {
   let de: DebugElement;
